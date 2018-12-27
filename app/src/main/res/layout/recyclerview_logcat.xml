@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+    </data>
+    <android.support.v7.widget.RecyclerView
+        android:background="@android:color/black"
+        android:paddingTop="10dp"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="15dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/logcat_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"/>
+</layout>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="clk"
+            type="com.ailian.rxjava.rxjavatest.CreateActivity.Click"/>
+    </data>
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/create"
+            android:text="创建型操作符--Crate()"
+            android:onClick="@{()->clk.clickCreate()}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_below="@+id/create"
+            android:text="创建型操作符--Crate()"
+            android:onClick="@{()->clk.showLog()}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <include android:id="@+id/include"
+            layout="@layout/recyclerview_logcat"/>
+    </RelativeLayout>
+</layout>

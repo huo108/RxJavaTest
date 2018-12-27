@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+        <data>
+            <variable name="smt" type="com.ailian.rxjava.rxjavatest.MainActivity.ClickHandler">
+            </variable>
+        </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="功能列表" />
+
+        <Button
+            android:paddingTop="20dp"
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:text="创建型操作符"
+            android:onClick="@{()->smt.toCreate()}"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</layout>
