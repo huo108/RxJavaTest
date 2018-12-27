@@ -2,9 +2,9 @@ package com.ailian.rxjava.rxjavatest;
 
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
-import android.support.v7.widget.RecyclerView;
 
 import com.ailian.rxjava.rxjavatest.databinding.ActivityCreateBinding;
+import com.ailian.rxjava.rxjavatest.util.LogUtil;
 
 import io.reactivex.Observable;
 import io.reactivex.ObservableEmitter;

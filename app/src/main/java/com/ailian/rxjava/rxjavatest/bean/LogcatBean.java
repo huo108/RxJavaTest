@@ -1,4 +1,4 @@
-package com.ailian.rxjava.rxjavatest;
+package com.ailian.rxjava.rxjavatest.bean;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

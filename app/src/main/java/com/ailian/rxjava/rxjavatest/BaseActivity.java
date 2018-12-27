@@ -2,9 +2,11 @@ package com.ailian.rxjava.rxjavatest;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+
+import com.ailian.rxjava.rxjavatest.adapter.LogcatAdapter;
+import com.ailian.rxjava.rxjavatest.bean.LogcatBean;
 
 import java.util.ArrayList;
 import java.util.List;

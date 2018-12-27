@@ -5,6 +5,7 @@ import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 
 import com.ailian.rxjava.rxjavatest.databinding.ActivityMainBinding;
+import com.ailian.rxjava.rxjavatest.util.LogUtil;
 
 import io.reactivex.Observable;
 import io.reactivex.Observer;

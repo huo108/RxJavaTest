@@ -11,20 +11,81 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <Button
-            android:id="@+id/create"
-            android:text="创建型操作符--Crate()"
-            android:onClick="@{()->clk.clickCreate()}"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-        <Button
-            android:layout_below="@+id/create"
-            android:text="创建型操作符--Crate()"
-            android:onClick="@{()->clk.showLog()}"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
         <include android:id="@+id/include"
             layout="@layout/recyclerview_logcat"/>
+        <LinearLayout
+            android:background="@null"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/create"
+                android:text="创建型操作符--Crate()"
+                android:onClick="@{()->clk.clickCreate()}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:text="快速创建型操作符--just()"
+                android:onClick="@{()->clk.showLog()}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:text="快速创建型操作符--fromArray()"
+                android:onClick="@{()->clk.showLog()}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:text="快速创建型操作符--fromIterable()"
+                android:onClick="@{()->clk.showLog()}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:text="快速创建型操作符--never()"
+                android:onClick="@{()->clk.showLog()}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:text="快速创建型操作符--empty()"
+                android:onClick="@{()->clk.showLog()}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:text="快速创建型操作符--error()"
+                android:onClick="@{()->clk.showLog()}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:text="延时创建型操作符--defer()"
+                android:onClick="@{()->clk.showLog()}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:text="延时创建型操作符--timer()"
+                android:onClick="@{()->clk.showLog()}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:text="延时创建型操作符--interval()"
+                android:onClick="@{()->clk.showLog()}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:text="延时创建型操作符--intervalRange()"
+                android:onClick="@{()->clk.showLog()}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:text="延时创建型操作符--range()"
+                android:onClick="@{()->clk.showLog()}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:text="延时创建型操作符--rangeLong()"
+                android:onClick="@{()->clk.showLog()}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
     </RelativeLayout>
 </layout>

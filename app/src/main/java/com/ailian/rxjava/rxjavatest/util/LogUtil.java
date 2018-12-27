@@ -1,7 +1,9 @@
-package com.ailian.rxjava.rxjavatest;
+package com.ailian.rxjava.rxjavatest.util;
 
 import android.os.SystemClock;
 import android.util.Log;
+
+import com.ailian.rxjava.rxjavatest.bean.LogcatBean;
 
 public class LogUtil {
 
@@ -23,7 +25,7 @@ public class LogUtil {
             Log.d(DEFAULT_TAG, log);
     }
 
-    public static LogcatBean dl(String tag,String log) {
+    public static LogcatBean dl(String tag, String log) {
         if (isDebug)
             Log.d(DEFAULT_TAG, log);
         return new LogcatBean(tag,log);
