@@ -7,9 +7,8 @@
         android:paddingTop="10dp"
         android:layout_alignParentBottom="true"
         android:paddingBottom="15dp"
-        android:layout_marginTop="30dp"
         android:id="@+id/logcat_recycler"
         android:layout_width="match_parent"
-        android:layout_height="500dp"/>
+        android:layout_height="410dp"/>
 </layout>
 

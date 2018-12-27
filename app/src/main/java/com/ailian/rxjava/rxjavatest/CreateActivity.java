@@ -35,7 +35,7 @@ public class CreateActivity extends BaseActivity {
         }
 
         public void showLog(){
-//            logcat();
+           // logcat();
         }
     }
 
