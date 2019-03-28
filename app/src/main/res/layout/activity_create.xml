@@ -39,73 +39,73 @@
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:onClick="@{()->clk.showLog()}"
+                    android:onClick="@{()->clk.clickJust()}"
                     android:text="快速创建型操作符--just()" />
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:onClick="@{()->clk.showLog()}"
+                    android:onClick="@{()->clk.clickFromArray()}"
                     android:text="快速创建型操作符--fromArray()" />
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:onClick="@{()->clk.showLog()}"
+                    android:onClick="@{()->clk.clickFromIterable()}"
                     android:text="快速创建型操作符--fromIterable()" />
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:onClick="@{()->clk.showLog()}"
+                    android:onClick="@{()->clk.clickNever()}"
                     android:text="快速创建型操作符--never()" />
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:onClick="@{()->clk.showLog()}"
+                    android:onClick="@{()->clk.clickEmpty()}"
                     android:text="快速创建型操作符--empty()" />
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:onClick="@{()->clk.showLog()}"
+                    android:onClick="@{()->clk.clickError()}"
                     android:text="快速创建型操作符--error()" />
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:onClick="@{()->clk.showLog()}"
+                    android:onClick="@{()->clk.clickFromDefer()}"
                     android:text="延时创建型操作符--defer()" />
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:onClick="@{()->clk.showLog()}"
+                    android:onClick="@{()->clk.clickTimer()}"
                     android:text="延时创建型操作符--timer()" />
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:onClick="@{()->clk.showLog()}"
+                    android:onClick="@{()->clk.clickInterval()}"
                     android:text="延时创建型操作符--interval()" />
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:onClick="@{()->clk.showLog()}"
+                    android:onClick="@{()->clk.clickIntervalRange()}"
                     android:text="延时创建型操作符--intervalRange()" />
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:onClick="@{()->clk.showLog()}"
+                    android:onClick="@{()->clk.clickRange()}"
                     android:text="延时创建型操作符--range()" />
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:onClick="@{()->clk.showLog()}"
+                    android:onClick="@{()->clk.clickRangeLong()}"
                     android:text="延时创建型操作符--rangeLong()" />
             </LinearLayout>
         </ScrollView>

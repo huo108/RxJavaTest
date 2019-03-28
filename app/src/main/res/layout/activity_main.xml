@@ -19,11 +19,20 @@
             android:text="功能列表" />
 
         <Button
+            android:layout_marginTop="10dp"
             android:paddingTop="20dp"
             android:id="@+id/submit"
             android:layout_width="match_parent"
             android:text="创建型操作符"
             android:onClick="@{()->smt.toCreate()}"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_marginTop="5dp"
+            android:paddingTop="20dp"
+            android:layout_width="match_parent"
+            android:text="变换操作符"
+            android:onClick="@{()->smt.toTransfor()}"
             android:layout_height="wrap_content" />
 
     </LinearLayout>
