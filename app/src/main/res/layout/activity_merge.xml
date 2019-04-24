@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="clk"
+            type="com.ailian.rxjava.rxjavatest.MergeActivity.Click" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/include"
+            layout="@layout/recyclerview_logcat" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/create"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:onClick="@{()->clk.clickConcat()}"
+                    android:text="组合/合并操作符--concat()" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{()->clk.clickConcatArray()}"
+                    android:text="组合/合并操作符--concatArray()" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{()->clk.clickMerge()}"
+                    android:text="组合/合并操作符--Merge()" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{()->clk.clickMergeArray()}"
+                    android:text="组合/合并操作符--MergeArray()" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:onClick="@{()->clk.clickConcatDelayError()}"
+                    android:text="组合/合并操作符--ConcatDelayError()" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{()->clk.clickMergeDelayError()}"
+                    android:text="组合/合并操作符--MergeDelayError()" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{()->clk.clickZip()}"
+                    android:text="组合/合并操作符--Zip()" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{()->clk.clickCombineLatest()}"
+                    android:text="组合/合并操作符--CombineLatest()" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:onClick="@{()->clk.clickCombineLatestDelayError()}"
+                    android:text="组合/合并操作符--CombineLatestDelayError()" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{()->clk.clickReduce()}"
+                    android:text="组合/合并操作符--Reduce()" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{()->clk.clickCollect()}"
+                    android:text="组合/合并操作符--Collect()" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{()->clk.clickStartWith()}"
+                    android:text="组合/合并操作符--StartWith()" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{()->clk.clickStartWithArray()}"
+                    android:text="组合/合并操作符--StartWithArray()" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{()->clk.clickCount()}"
+                    android:text="组合/合并操作符--Count()" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+</layout>

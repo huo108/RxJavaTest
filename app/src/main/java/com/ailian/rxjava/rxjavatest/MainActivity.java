@@ -34,6 +34,11 @@ public class MainActivity extends BaseActivity {
             Intent intent = new Intent(MainActivity.this, TransforActivity.class);
             MainActivity.this.startActivity(intent);
         }
+
+        public void toMerge() {
+            Intent intent = new Intent(MainActivity.this, MergeActivity.class);
+            MainActivity.this.startActivity(intent);
+        }
     }
 
     private void justOperator() {

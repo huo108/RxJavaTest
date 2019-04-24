@@ -11,6 +11,11 @@ import com.ailian.rxjava.rxjavatest.bean.LogcatBean;
 import java.util.ArrayList;
 import java.util.List;
 
+import io.reactivex.Observable;
+import io.reactivex.Observer;
+import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.functions.Consumer;
+
 public class BaseActivity extends Activity {
     private static final String TAG = "BaseActivity";
     protected static List<LogcatBean> logcats;
@@ -32,9 +37,14 @@ public class BaseActivity extends Activity {
         recyclerView.setAdapter(logcatAdapter);
     }
 
-    protected void addLogcat(LogcatBean logcatBean){
-        logcatAdapter.addDatas(logcatBean);
-        recyclerView.scrollToPosition(logcatAdapter.getItemCount()-1);
+    protected void addLogcat(final LogcatBean logcatBean){
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                logcatAdapter.addDatas(logcatBean);
+                recyclerView.scrollToPosition(logcatAdapter.getItemCount()-1);
+            }
+        });
     }
 
 }
