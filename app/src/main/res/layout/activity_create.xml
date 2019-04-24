@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
         <variable
             name="clk"
             type="com.ailian.rxjava.rxjavatest.CreateActivity.Click" />

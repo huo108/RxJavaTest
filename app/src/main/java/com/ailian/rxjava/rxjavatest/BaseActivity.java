@@ -11,11 +11,6 @@ import com.ailian.rxjava.rxjavatest.bean.LogcatBean;
 import java.util.ArrayList;
 import java.util.List;
 
-import io.reactivex.Observable;
-import io.reactivex.Observer;
-import io.reactivex.android.schedulers.AndroidSchedulers;
-import io.reactivex.functions.Consumer;
-
 public class BaseActivity extends Activity {
     private static final String TAG = "BaseActivity";
     protected static List<LogcatBean> logcats;
